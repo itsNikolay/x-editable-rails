@@ -30,11 +30,14 @@
 .editable-input {
     vertical-align: top; 
     display: inline-block; /* should be inline to take effect of parent's white-space: nowrap */
-    width: auto; /* bootstrap-responsive has width: 100% that breakes layout */
+    width: 400px; /* bootstrap-responsive has width: 100% that breakes layout */
     white-space: normal; /* reset white-space decalred in parent*/
    /* display-inline emulation for IE7*/
    zoom: 1; 
    *display: inline;   
+   input {
+     width: 370px;
+   }
 }
 
 .editable-buttons .editable-cancel {
@@ -123,11 +126,11 @@
    position: absolute;
    opacity: 0.6;
    z-index: 100;
-   
+
    top: 50%;
    right: 6px;
    margin-top: -6px;
-   
+
 }
 
 .editable-clear-x:hover {
